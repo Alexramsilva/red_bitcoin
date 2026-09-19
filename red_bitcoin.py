@@ -209,7 +209,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 st.markdown(
-    f'<span style="color:white;">{prob:.2%}</span>',
+    f'<span style="color:white;">**{prob:.2%}**</span>',
     unsafe_allow_html=True
 )
 if prob > 0.6:
