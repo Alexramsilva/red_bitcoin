@@ -166,8 +166,8 @@ model.fit(X_scaled, y)
 # -------------------------
 # 6. UI Streamlit
 # -------------------------
-st.title("📈 Bitcoin Trading Opportunity Predictor")
-
+st.image("NQH.svg", caption="", width=300)
+st.title("Bitcoin Trading Opportunity Predictor")
 st.write("Predicción basada en día y hora")
 
 day = st.slider("Día de la semana (1=Lunes, 7=Domingo)", 1, 7, 3)
@@ -189,7 +189,7 @@ input_scaled = scaler.transform(input_data)
 # Predicción
 prob = model.predict_proba(input_scaled)[0][1]
 
-st.subheader("📊 Probabilidad de oportunidad:")
+st.subheader("Probabilidad de oportunidad:")
 st.write(f"{prob:.2%}")
 
 if prob > 0.6:
@@ -198,3 +198,8 @@ elif prob > 0.4:
     st.warning("⚠️ Probabilidad media")
 else:
     st.error("❌ Baja probabilidad")
+
+
+####################
+st.subheader("Powored by")
+st.image("NQH.svg", caption="", width=100)
