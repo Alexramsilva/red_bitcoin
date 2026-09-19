@@ -211,7 +211,7 @@ st.markdown("""
         background-color: #0F172A;
     }
     h1, h2, h3 {
-        color: #6CB42D;
+        color: #FFFFFF;
     }
 </style>
 """, unsafe_allow_html=True)
