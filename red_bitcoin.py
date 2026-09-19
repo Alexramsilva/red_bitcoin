@@ -203,3 +203,16 @@ else:
 ####################
 st.subheader("Powored by")
 st.image("NQH.svg", caption="", width=200)
+
+# -----------------------------------------------------
+st.markdown("""
+<style>
+    .stApp {
+        background-color: #5BF58E;
+    }
+    h1, h2, h3 {
+        color: #000000;
+    }
+</style>
+""", unsafe_allow_html=True)
+
