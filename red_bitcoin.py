@@ -180,6 +180,13 @@ st.markdown(
 
 day = st.slider("Día de la semana (1=Lunes, 7=Domingo)", 1, 7, 3)
 hour = st.slider("Hora", 0, 23, 12)
+st.markdown("""
+<style>
+div[data-testid="stSlider"] label {
+    color: white !important;
+}
+</style>
+""", unsafe_allow_html=True)
 minute = st.slider("Minuto", 0, 59, 0)
 
 minutes = hour * 60 + minute
@@ -201,7 +208,6 @@ st.markdown(
     '<h2 style="color:#FFFFFF;">Probabilidad de oportunidad: </h2>',
     unsafe_allow_html=True
 )
-st.write(f"{prob:.2%}")
 st.markdown(
     f'<span style="color:white;">{prob:.2%}</span>',
     unsafe_allow_html=True
