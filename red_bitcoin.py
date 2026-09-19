@@ -198,11 +198,14 @@ input_scaled = scaler.transform(input_data)
 prob = model.predict_proba(input_scaled)[0][1]
 
 st.markdown(
-    '<h2 style="color:#FFFFFF;">Probabilidad de oportunidad: {prob:.2%}</h2>',
+    '<h2 style="color:#FFFFFF;">Probabilidad de oportunidad: </h2>',
     unsafe_allow_html=True
 )
 st.write(f"{prob:.2%}")
-
+st.markdown(
+    f'<span style="color:white;">{prob:.2%}</span>',
+    unsafe_allow_html=True
+)
 if prob > 0.6:
     st.success("🔥 Alta probabilidad de trading")
 elif prob > 0.4:
