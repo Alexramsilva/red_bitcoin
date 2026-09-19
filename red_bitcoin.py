@@ -208,7 +208,7 @@ st.image("NQH.svg", caption="", width=200)
 st.markdown("""
 <style>
     .stApp {
-        background-color: #5BF58E;
+        background-color: #1E293B;
     }
     h1, h2, h3 {
         color: #000000;
