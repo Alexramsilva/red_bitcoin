@@ -167,8 +167,16 @@ model.fit(X_scaled, y)
 # 6. UI Streamlit
 # -------------------------
 st.image("NQH.svg", caption="", width=400)
-st.title("Bitcoin Trading Opportunity Predictor")
-st.write("Predicción basada en día y hora")
+
+st.markdown(
+    '<h1 style="color:#FFFFFF;">Bitcoin Trading Opportunity Predictor</h1>',
+    unsafe_allow_html=True
+)
+st.markdown(
+    '<h2 style="color:#FFFFFF;">Predicción basada en día y hora</h2>',
+    unsafe_allow_html=True
+)
+
 
 day = st.slider("Día de la semana (1=Lunes, 7=Domingo)", 1, 7, 3)
 hour = st.slider("Hora", 0, 23, 12)
@@ -189,7 +197,10 @@ input_scaled = scaler.transform(input_data)
 # Predicción
 prob = model.predict_proba(input_scaled)[0][1]
 
-st.subheader("Probabilidad de oportunidad:")
+st.markdown(
+    '<h2 style="color:#FFFFFF;">Probabilidad de oportunidad:</h2>',
+    unsafe_allow_html=True
+)
 st.write(f"{prob:.2%}")
 
 if prob > 0.6:
