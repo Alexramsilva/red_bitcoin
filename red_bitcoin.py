@@ -221,7 +221,10 @@ else:
 
 
 ####################
-st.write("**Powored by**")
+st.markdown(
+    f'<span style="color:#F1F5F9;">**Powored by**</span>',
+    unsafe_allow_html=True
+)
 st.image("NQH.svg", caption="", width=200)
 
 # -----------------------------------------------------
