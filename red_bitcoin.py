@@ -201,7 +201,7 @@ else:
 
 
 ####################
-st.subheader("Powored by")
+st.write("Powored by")
 st.image("NQH.svg", caption="", width=200)
 
 # -----------------------------------------------------
