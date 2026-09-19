@@ -166,7 +166,7 @@ model.fit(X_scaled, y)
 # -------------------------
 # 6. UI Streamlit
 # -------------------------
-st.image("NQH.svg", caption="", width=300)
+st.image("NQH.svg", caption="", width=400)
 st.title("Bitcoin Trading Opportunity Predictor")
 st.write("Predicción basada en día y hora")
 
@@ -202,4 +202,4 @@ else:
 
 ####################
 st.subheader("Powored by")
-st.image("NQH.svg", caption="", width=100)
+st.image("NQH.svg", caption="", width=200)
